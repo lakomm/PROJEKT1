@@ -12,10 +12,13 @@ public:
    void sort(int arrayToSort[],int rozmiar){
      start=clock();
     int it=0;
-      while(it<rozmiar-1){
+    bool swapped=true;
+      while(it<rozmiar-1-it && swapped){
+        swapped = false;
         for(int j =0;j<rozmiar-1;j++){
           if(arrayToSort[j]>arrayToSort[j+1]){
             swap(arrayToSort[j],arrayToSort[j+1]);     //swap if L<P
+            swapped=true;
           }
         }
         it++;

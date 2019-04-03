@@ -4,7 +4,6 @@
 #include<algorithm>
 using namespace std;
 
-
 class Quicksort{
 public:
   template<typename T>

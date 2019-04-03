@@ -5,7 +5,6 @@
 #include<windows.h>
 using namespace std;
 
-
 class Mergesort{
 public:
     template<typename T>
@@ -14,7 +13,6 @@ public:
 
      T *dodTablica;
      dodTablica=new T[rozmiar];
-
      mergeSort(tablicaDoPosortowania, 0, rozmiar-1, dodTablica);
 
     stop=clock();
